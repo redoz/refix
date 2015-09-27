@@ -1,0 +1,22 @@
+{
+  "name": "refix",
+  "version": "0.0.0",
+  "homepage": "https://github.com/redoz/refix",
+  "authors": [
+    "Patrik <redoz@redoz.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.1.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.3",
+    "paper-styles": "PolymerElements/paper-styles#~1.0.11",
+    "paper-menu": "PolymerElements/paper-menu#~1.1.0"
+  }
+}

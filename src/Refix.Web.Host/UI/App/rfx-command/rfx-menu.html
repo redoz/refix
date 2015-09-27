@@ -1,0 +1,29 @@
+﻿<link rel="import" href="Components/polymer/polymer.html">
+<link rel="import" href="Components/iron-flex-layout/iron-flex-layout.html">
+
+<dom-module id="rfx-menu">
+
+    <template>
+        <!-- scoped CSS for this element -->
+        <style>
+          
+        </style>
+
+        <ul>
+            <li>{{tree.title}} ({{tree.id}})</li>
+            <template repeat="{{child in tree.children}}">
+                <rfx-menu tree="{{child}}"></rfx-menu>
+            </template>
+        </ul>
+    </template>
+
+    <script>
+        Polymer({
+            is: "rfx-app",
+            properties: {
+                tree: Object,
+            }
+        });
+    </script>
+
+</dom-module>
